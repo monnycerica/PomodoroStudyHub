@@ -1,8 +1,5 @@
-/*============
-  Golbal Styles
-  ============= */
 :root {
-	--main-pink-color: #7bb5d9;
+	--main-red-color: #DF3333;
 	--main-yellow-color: #EEF296;
 	--main-green-color: #9ADE7B;
 	--form-input-bg: #efefef;
@@ -24,9 +21,6 @@ body {
 }
 /*background image*/
 
-/*============
-  Main Content
-  ============= */
 #mainPage {
 	width: 100%;
 	padding: 0;
@@ -55,10 +49,6 @@ body {
 	left: 0;
 	right: 0;
 }
-
-/*==========
-  Brand Name
-  =========== */
 #brand {
 	min-width: 150px;
 	font-weight: bold;
@@ -74,12 +64,8 @@ body {
 		font-size: 8vw;
 	}
 }
-
-/*========
-  Buttons
-  ======== */
 .scrolltop-wrap {
-	color: var(--main-pink-color);
+	color: var(--main-red-color);
 	margin-bottom: 2rem;
 	position: fixed;
 	z-index: 100;
@@ -90,17 +76,18 @@ body {
 
 .back-to-top-button {
 	cursor: pointer;
-	color: var(--main-pink-color);
+	color: var(--main-red-color);
 }
 
 #pomodoros,
 #shortBreak,
 #longBreak {
 	text-align: center;
+	font-weight: bold;
 	border-radius: var(--lg-border-radius);
 	padding: 0.65rem 1.5rem 0.45rem 1.5rem;
-	color: #22668D;
-	background-color: #C2DED1;
+	color: #000000;
+	background-color: #62c6be;
 }
 
 
@@ -125,24 +112,19 @@ body {
 	background-color: #9ADE7B;
 }
 #stopButton{
-	background-color: #7bb5d9;
+	background-color: #DF3333;
 }
 #resetButton{
 	background-color: #1B4242;
 }
-#startButton,
-#stopButton,
-#resetButton {
-	box-shadow: 0 9px #999;
-}
 #taskButton{
-	color:#C0DBEA;
+	color:#95BDFF;
 }
 #logButton{
-	color:#C0DBEA;
+	color:#95BDFF;
 }
 #settingButton{
-	color:#C0DBEA;
+	color:#95BDFF;
 }
 
 .buttonClicked {
@@ -174,10 +156,6 @@ body {
 .show > .btn-outline-secondary.dropdown-toggle:focus {
 	box-shadow: none;
 }
-
-/*======
-  Modals
-  ====== */
 .modal-lg {
 	max-width: 700px;
 }
@@ -200,7 +178,7 @@ body {
 
 .modal-title {
 	font-size: 2rem;
-	border-bottom: 4px solid var(--main-pink-color);
+	border-bottom: 4px solid var(--main-red-color);
 }
 
 .modal-footer {
@@ -343,9 +321,6 @@ body {
 	color: #ececec !important;
 }
 
-/* ===============
-  Site description
-  ================ */
 .site-description {
 	background: #9adbb3;
 }
@@ -374,7 +349,7 @@ body {
 
 .section-title-border {
 	height: 0.5rem;
-	background: var(--main-pink-color);
+	background: var(--main-red-color);
 	border-radius: var(--lg-border-radius);
 	margin-bottom: 3rem;
 }
@@ -395,7 +370,7 @@ body {
 }
 
 .red-link {
-	color: var(--main-pink-color) !important;
+	color: var(--main-red-color) !important;
 	font-weight: bold;
 	font-size: 1.3rem;
 }
@@ -414,9 +389,6 @@ dd[class="col-sm-10"] {
 	margin-bottom: 1rem;
 }
 
-/* ========
-   Footer
-   ======== */
 .social-icon {
 	color: #999;
 }
@@ -430,7 +402,7 @@ dd[class="col-sm-10"] {
 }
 
 .fa-heart {
-	color: var(--main-pink-color);
+	color: var(--main-red-color);
 }
 
 #siteFooter p a {
@@ -447,9 +419,6 @@ dd[class="col-sm-10"] {
 	color: rgba(0, 0, 0, 0.2);
 }
 
-/* ===============
-  Switch Input
-  ================ */
 .switch {
 	position: relative;
 	display: inline-block;
@@ -509,9 +478,6 @@ input:checked + .slider:before {
 	border-radius: 50%;
 }
 
-/* ===================
-  Hover link animation
-  ==================== */
 .red-underline {
 	position: relative;
 	text-decoration: none;
@@ -528,7 +494,7 @@ input:checked + .slider:before {
 .red-underline::after {
 	display: block;
 	content: "";
-	border-bottom: solid 0.15rem var(--main-pink-color);
+	border-bottom: solid 0.15rem var(--main-red-color);
 	transform: scaleX(0);
 	transition: transform 250ms ease-in-out;
 }
@@ -538,7 +504,6 @@ input:checked + .slider:before {
 	transform: scaleX(1);
 }
 
-/* for blue */
 .blue-underline {
 	position: relative;
 	text-decoration: none;
@@ -593,7 +558,7 @@ input:checked + .slider:before {
   Scroll Indicator
   ================ */
 #scrollIndicator {
-	background: var(--main-pink-color);
+	background: var(--main-red-color);
 	z-index: 150;
 	height: 4px;
 	border-radius: var(--sm-border-radius);
@@ -602,9 +567,6 @@ input:checked + .slider:before {
 	top: 0;
 }
 
-/* ===========
-  Progress Bar
-  ============ */
 .radial-progress-bar {
 	border-radius: 50%;
 	width: 300px;
@@ -627,6 +589,6 @@ input:checked + .slider:before {
 }
 
 .progress-value {
-	background-image: -webkit-linear-gradient(left, var(--main-pink-color) 50%, transparent 50%),
-		-webkit-linear-gradient(left, #ddd 50%, var(--main-pink-color) 50%);
+	background-image: -webkit-linear-gradient(left, var(--main-red-color) 50%, transparent 50%),
+		-webkit-linear-gradient(left, #ddd 50%, var(--main-red-color) 50%);
 }
